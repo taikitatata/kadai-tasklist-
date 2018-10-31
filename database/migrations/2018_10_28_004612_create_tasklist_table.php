@@ -13,7 +13,7 @@ class CreateTasklistTable extends Migration
      */
     public function up()
     {
-        Schema::create('taskes', function (Blueprint $table) {
+        Schema::create('tasks', function (Blueprint $table) {
             $table->increments('id');
             $table->string('content');
             $table->timestamps();
@@ -27,6 +27,6 @@ class CreateTasklistTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('taskes');
+        Schema::dropIfExists('tasks');
     }
 }
